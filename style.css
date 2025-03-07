@@ -1,0 +1,137 @@
+;root{
+    --green:var(--green)
+}
+
+
+
+
+body{
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    background-image:url(https://img.freepik.com/vetores-premium/fundo-desfocado-azul_1107-631.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(116, 116, 124);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 2rem 1 rem;
+    min-height: 100vh;
+
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: rgb(116, 116, 124);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(102, 102, 114, 0.8);
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) ;
+}
+
+.content{
+display: columm;
+flex-direction: columm;
+gap: 2rem;
+width: 100%;
+max-width: 600px;
+padding: 1rem;
+}
+
+.content--add-item{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+    flex: 1;
+
+}
+
+#btn-new-task{
+    background-color: #1E90FF;
+    color: rgb(183, 189, 194);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-new-task:hover{
+    background-color: rgb(56, 56, 241);
+}
+
+#to-do-list{
+    display: columm;
+    flex-direction: columm;
+    gap: 1rem;
+    padding: 0;
+    width: 100%;
+
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.4s;
+
+}
+
+#to-do-list li:hover{
+    background-color: #6cb6ff;
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: #07a34d;
+    color: aliceblue;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    margin-top: 10px;
+
+}
+
+#btn-ok:hover{
+    background-color: rgb(6, 75, 54);
+}
